@@ -1,7 +1,10 @@
-# Concave_Bot
-Check setting file to can use the bot
+# NowPlaying
 
-Add the bot token.
-NowPlayingChannelID is the channel in which messages are sent
+Add your bot token to settings.py, if you need to add it as an environment variable instead, configure settings.py as:
 
-Don't forget to invite the bot in both channel to read and send messages
+import os
+
+words_to_scan = "Now playing"
+discordBotToken = os.environ["bottoken"]
+img_url = "https://i.postimg.cc/GmDwBbD4/CNV-white.png"
+NowPlayingChannelID = 927784768681156618
